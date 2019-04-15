@@ -1,0 +1,6 @@
+help("Greene2003", package = "AER")
+data("USConsump1979", package = "AER")
+plot(expenditure ~ income, data = as.data.frame(USConsump1979), pch = 19)
+fm <- lm(expenditure ~ income, data = as.data.frame(USConsump1979))
+summary(fm)
+abline(fm)
